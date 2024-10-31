@@ -1,5 +1,5 @@
 {
-  "name": "eloquent/phony",
+  "name": "nathanetech/phony",
   "description": "Mocks, stubs, and spies for PHP.",
   "keywords": [
     "mock",
