@@ -1,17 +1,11 @@
-> # No longer maintained
->
-> This package is no longer maintained. See [this statement] for more info.
->
-> [this statement]: https://gist.github.com/ezzatron/713a548735febe3d76f8ca831bc895c0
-
 <p align="center"><img alt="Phony" src="assets/readme/phony-logo-with-text.svg" width="400" /></p>
 
 _Mocks, stubs, and spies for PHP._
 
 [![Current version image][version-image]][current version]
 
-[current version]: https://packagist.org/packages/eloquent/phony
-[version-image]: https://img.shields.io/packagist/v/eloquent/phony.svg?style=flat-square "This project uses semantic versioning"
+[current version]: https://packagist.org/packages/nathanetech/phony
+[version-image]: https://img.shields.io/packagist/v/nathanetech/phony.svg?style=flat-square "This project uses semantic versioning"
 
 [![Example verification output][verification-video-thumbnail]][verification output video]
 
@@ -23,12 +17,12 @@ _Mocks, stubs, and spies for PHP._
 Available as various [Composer] packages, depending on the test framework in
 use:
 
-- For [Kahlan], use [eloquent/phony-kahlan] and import
+- For [Kahlan], use [nathanetech/phony-kahlan] and import
   `Eloquent\Phony\Kahlan`.
 - For [PHPUnit], use [eloquent/phony-phpunit] and import
   `Eloquent\Phony\Phpunit`.
 - For [Peridot], use [eloquent/phony-peridot] and import `Eloquent\Phony`.
-- For other frameworks, or standalone usage, use [eloquent/phony] and import
+- For other frameworks, or standalone usage, use [nathanetech/phony] and import
   `Eloquent\Phony`.
 
 See the section on [Integration with test frameworks] in the [documentation].
@@ -228,7 +222,7 @@ See the [phony-examples] repository.
 
 ### Standalone usage
 
-Install the [eloquent/phony] package, then:
+Install the [nathanetech/phony] package, then:
 
 ```php
 use function Eloquent\Phony\mock;
@@ -244,7 +238,7 @@ $handle->methodA->calledWith('argument');
 
 ### [Kahlan] usage
 
-Install the [eloquent/phony-kahlan] package, then:
+Install the [nathanetech/phony-kahlan] package, then:
 
 ```php
 use function Eloquent\Phony\Kahlan\mock;
@@ -262,7 +256,7 @@ describe('Phony', function () {
 });
 ```
 
-The [eloquent/phony-kahlan] package also provides auto-wired mocks:
+The [nathanetech/phony-kahlan] package also provides auto-wired mocks:
 
 ```php
 use function Eloquent\Phony\Kahlan\on;
@@ -474,13 +468,19 @@ For the full copyright and license information, please view the [LICENSE file].
 
 [license file]: LICENSE
 
+## Note
+This is a fork of the now unmaintained [eloquent/phony]. The original purpose of this fork
+was to allow for compatibility with PHP 8.3. Be aware that I do not intend to regularly 
+maintain this other than to keep it up to date with PHP as needed.
+
 <!-- References -->
 
 [documentation]: https://eloquent-software.com/phony/latest/
-[eloquent/phony-kahlan]: https://packagist.org/packages/eloquent/phony-kahlan
+[nathanetech/phony-kahlan]: https://packagist.org/packages/nathanetech/phony-kahlan
 [eloquent/phony-peridot]: https://packagist.org/packages/eloquent/phony-peridot
 [eloquent/phony-phpunit]: https://packagist.org/packages/eloquent/phony-phpunit
-[eloquent/phony]: https://packagist.org/packages/eloquent/phony
+[nathanetech/phony]: https://packagist.org/packages/nathanetech/phony
+[eloquent/phony]: https://packagist.org/packages/eloquent/phony 
 [github issue]: https://github.com/eloquent/phony/issues
 [hhvm]: https://hhvm.com/
 [kahlan]: https://kahlan.github.io/docs/
