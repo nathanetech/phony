@@ -1,5 +1,5 @@
 {
-  "name": "nathanetech/phony",
+  "name": "teamgantt/phony",
   "description": "Mocks, stubs, and spies for PHP.",
   "keywords": [
     "mock",
@@ -19,6 +19,10 @@
       "name": "Erin Millard",
       "email": "ezzatron@gmail.com",
       "homepage": "https://ezzatron.com/"
+    },
+    {
+      "name": "Nathan Tech",
+      "email": "dev@teamgantt.com"
     }
   ],
   "config": {
