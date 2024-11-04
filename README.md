@@ -470,7 +470,7 @@ For the full copyright and license information, please view the [LICENSE file].
 
 ## Note
 This is a fork of the now unmaintained [eloquent/phony]. The original purpose of this fork
-was to allow for compatibility with PHP 8.3. Be aware that I do not intend to regularly 
+was to allow for compatibility with PHP 8.3. Be aware that we do not intend to regularly 
 maintain this other than to keep it up to date with PHP as needed.
 
 <!-- References -->
