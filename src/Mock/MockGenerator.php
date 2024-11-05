@@ -303,8 +303,8 @@ EOD;
 
         if ($canReturn) {
             $source .= <<<EOD
-        $result = {$staticHandle}->spy(\{$parameterNames[0]})
-            ->invokeWith(new Arguments(\{$parameterNames[1]}));
+        $result = {$staticHandle}->spy({$parameterNames[0]})
+            ->invokeWith(new Arguments({$parameterNames[1]}));
 
         return $result;
     }
@@ -312,8 +312,8 @@ EOD;
 EOD;
         } else {
             $source .= <<<EOD
-        {$staticHandle}->spy(\{$parameterNames[0]})
-            ->invokeWith(new Arguments(\{$parameterNames[1]}));
+        {$staticHandle}->spy({$parameterNames[0]})
+            ->invokeWith(new Arguments({$parameterNames[1]}));
     }
 
 EOD;
@@ -638,8 +638,8 @@ EOD;
 
         if ($canReturn) {
             $source .= <<<EOD
-        $result = \$this->_handle->spy(\{$parameterNames[0]})
-            ->invokeWith(new Arguments(\{$parameterNames[1]}));
+        $result = \$this->_handle->spy({$parameterNames[0]})
+            ->invokeWith(new Arguments({$parameterNames[1]}));
 
         return $result;
     }
@@ -647,8 +647,8 @@ EOD;
 EOD;
         } else {
             $source .= <<<EOD
-        \$this->_handle->spy(\{$parameterNames[0]})
-            ->invokeWith(new Arguments(\{$parameterNames[1]}));
+        \$this->_handle->spy({$parameterNames[0]})
+            ->invokeWith(new Arguments({$parameterNames[1]}));
     }
 
 EOD;
